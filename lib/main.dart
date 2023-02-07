@@ -18,9 +18,15 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.purple,
         //scaffoldBackgroundColor: Colors.purple[600],
+        floatingActionButtonTheme: FloatingActionButtonThemeData(
+          backgroundColor: Colors.orange,
+        ),
       ),
       darkTheme: ThemeData.dark().copyWith(
         primaryColor: Colors.purple,
+        floatingActionButtonTheme: FloatingActionButtonThemeData(
+          backgroundColor: Colors.orange,
+        ),
       ),
       home: TodoListPage(),
     );

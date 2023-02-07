@@ -62,7 +62,6 @@ class _TodoListPageState extends State<TodoListPage> {
           }
         },
         child: Icon(Icons.add),
-        backgroundColor: Colors.orange,
       ),
     );
   }
