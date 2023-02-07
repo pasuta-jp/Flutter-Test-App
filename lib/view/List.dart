@@ -41,6 +41,9 @@ class _TodoListPageState extends State<TodoListPage> {
           //log(index.toString());
           return Card(
             child: ListTile(
+              shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(20),
+              ),
               leading: Icon(Icons.chat),
               title: Text(todoList[index][0]),
               subtitle: Text(todoList[index][1]),
