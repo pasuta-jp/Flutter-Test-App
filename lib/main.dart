@@ -18,7 +18,9 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.purple,
         //scaffoldBackgroundColor: Colors.purple[600],
       ),
-      darkTheme: ThemeData.dark(),
+      darkTheme: ThemeData.dark().copyWith(
+        primaryColor: Colors.purple,
+      ),
       home: TodoListPage(),
     );
   }
