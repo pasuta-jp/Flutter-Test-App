@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'dart:developer';
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
+import 'package:flutter_localizations/flutter_localizations.dart';
 
 class TodoAddPage extends StatefulWidget {
   @override
@@ -29,7 +31,7 @@ class _TodoAddPageState extends State<TodoAddPage> {
             TextField(
               decoration: InputDecoration(
                   hintText: "text",
-                  labelText: "Title",
+                  labelText: L10n.of(context)!.title,
                   icon: Icon(Icons.drive_file_rename_outline)),
               onChanged: (String value) {
                 setState(() {

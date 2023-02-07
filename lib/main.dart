@@ -5,6 +5,7 @@ import 'dart:developer';
 import './view/AddMemo.dart';
 import './view/List.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
+import 'package:flutter_localizations/flutter_localizations.dart';
 
 void main() {
   runApp(MyApp());
@@ -15,8 +16,8 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      localizationsDelegates: L10n.localizationsDelegates, // これ！
-      supportedLocales: L10n.supportedLocales, // これ！
+      localizationsDelegates: L10n.localizationsDelegates,
+      supportedLocales: L10n.supportedLocales,
       title: 'My Todo App',
       theme: ThemeData(
         primarySwatch: Colors.purple,
